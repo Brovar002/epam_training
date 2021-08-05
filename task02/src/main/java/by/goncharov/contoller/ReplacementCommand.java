@@ -3,6 +3,15 @@ package by.goncharov.contoller;
 import by.goncharov.service.Replacement;
 import java.util.List;
 
+/**
+ * Class for execute replacement numbers.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see Replacement
+ * @see by.goncharov.view.View
+ * @see List
+ */
+
 public class ReplacementCommand {
     double b;
     double a;

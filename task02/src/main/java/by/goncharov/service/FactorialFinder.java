@@ -1,5 +1,12 @@
 package by.goncharov.service;
 
+/**
+ * Class for find factorial.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see by.goncharov.contoller.FactorialFinderCommand
+ */
+
 public class FactorialFinder {
     public int calculateFactorial(int n) {
         int result = 1;

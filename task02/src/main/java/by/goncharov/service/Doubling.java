@@ -3,6 +3,15 @@ package by.goncharov.service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for calculate number doubling.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see ArrayList
+ * @see List
+ * @see by.goncharov.contoller.DoublingCommand
+ */
+
 public class Doubling {
     public List<Double> doubling(double a, double b, double c) {
         List<Double> list = new ArrayList<Double>();

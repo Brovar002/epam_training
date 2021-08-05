@@ -1,18 +1,31 @@
 package by.goncharov.view;
 
-import by.goncharov.contoller.*;
-import by.goncharov.runner.Main;
+import by.goncharov.contoller.CalculatingSumCommand;
+import by.goncharov.contoller.NumberChangerCommand;
+import by.goncharov.contoller.DivisionWithoutRemainderCommand;
+import by.goncharov.contoller.DoublingCommand;
+import by.goncharov.contoller.FunctionFinderCommand;
+import by.goncharov.contoller.FactorialFinderCommand;
+import by.goncharov.contoller.FireSensorCommand;
+import by.goncharov.contoller.OddNumbersCommand;
+import by.goncharov.contoller.ReplacementCommand;
+import by.goncharov.contoller.SmallestNumberCommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Scanner;
+
+/**
+ * Class for communicate with user.
+ * @author Goncharov Daniil
+ * @version 1.0
+ */
 
 public class View {
     public void view() {
         int choice = 0;
         boolean y = true;
         Scanner in = new Scanner(System.in);
-        Logger logger = LogManager.getLogger(Main.class);
+        Logger logger = LogManager.getLogger(View.class);
         logger.info("Start application.");
         while (y) {
             System.out.println("Please, make your choice:\n"

@@ -2,6 +2,15 @@ package by.goncharov.contoller;
 
 import by.goncharov.service.Doubling;
 
+/**
+ * Class for execute number doubling.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see Doubling
+ * @see by.goncharov.view.View
+ * @see List
+ */
+
 import java.util.List;
 
 public class DoublingCommand {

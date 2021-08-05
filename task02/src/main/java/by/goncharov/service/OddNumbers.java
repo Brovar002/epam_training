@@ -1,5 +1,12 @@
 package by.goncharov.service;
 
+/**
+ * Class for calculate sum of odd numbers.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see by.goncharov.contoller.OddNumbersCommand
+ */
+
 public class OddNumbers {
     int result;
     public int oddNumbers() {

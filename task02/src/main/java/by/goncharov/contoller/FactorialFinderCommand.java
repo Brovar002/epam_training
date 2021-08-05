@@ -2,6 +2,14 @@ package by.goncharov.contoller;
 
 import by.goncharov.service.FactorialFinder;
 
+/**
+ * Class for execute calculate number's factorial.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see FactorialFinder
+ * @see by.goncharov.view.View
+ */
+
 public class FactorialFinderCommand {
     int n;
 

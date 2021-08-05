@@ -1,5 +1,12 @@
 package by.goncharov.service;
 
+/**
+ * Class for find result of function.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see by.goncharov.contoller.FunctionFinderCommand
+ */
+
 public class FunctionFinder {
     public double function(double x) {
         if(x <= 13){

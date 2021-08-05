@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"by.goncharov"},{"l":"by.goncharov.contoller"},{"l":"by.goncharov.runner"},{"l":"by.goncharov.service"},{"l":"by.goncharov.view"}];updateSearchResults();

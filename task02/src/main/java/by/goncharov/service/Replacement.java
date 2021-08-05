@@ -3,6 +3,15 @@ package by.goncharov.service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for replacement numbers.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see List
+ * @see ArrayList
+ * @see by.goncharov.contoller.ReplacementCommand
+ */
+
 public class Replacement {
     SmallestNumber smallestNumber = new SmallestNumber();
     AverageFinder averageFinder = new AverageFinder();

@@ -2,6 +2,14 @@ package by.goncharov.contoller;
 
 import by.goncharov.service.SmallestNumber;
 
+/**
+ * Class for execute finding of smaller number.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see SmallestNumber
+ * @see by.goncharov.view.View
+ */
+
 public class SmallestNumberCommand {
     double b;
     double a;

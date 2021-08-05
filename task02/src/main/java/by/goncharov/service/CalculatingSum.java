@@ -1,5 +1,12 @@
 package by.goncharov.service;
 
+/**
+ * Class for calculate sum in diapasone.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see by.goncharov.contoller.CalculatingSumCommand
+ */
+
 public class CalculatingSum {
     int i;
     public int sum() {

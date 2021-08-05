@@ -1,5 +1,12 @@
 package by.goncharov.service;
 
+/**
+ * Class for find number's divisions.
+ * @author Goncharov Daniil
+ * @version 1.0
+ * @see by.goncharov.contoller.DivisionWithoutRemainderCommand
+ */
+
 public class DivisionWithoutRemainder {
     boolean bool;
     int i = 1;
