@@ -1,4 +1,4 @@
-package by.goncharov.contoller;
+package by.goncharov.runner;
 
 import by.goncharov.view.View;
 

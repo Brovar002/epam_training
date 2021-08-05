@@ -1,6 +1,7 @@
 package by.goncharov.view;
 
 import by.goncharov.contoller.*;
+import by.goncharov.runner.Main;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
