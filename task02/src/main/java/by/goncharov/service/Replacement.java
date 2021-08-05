@@ -9,7 +9,7 @@ import java.util.List;
  * @version 1.0
  * @see List
  * @see ArrayList
- * @see by.goncharov.contoller.ReplacementCommand
+ * @see by.goncharov.controller.ReplacementCommand
  */
 
 public class Replacement {

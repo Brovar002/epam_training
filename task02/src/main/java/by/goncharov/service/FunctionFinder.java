@@ -4,7 +4,7 @@ package by.goncharov.service;
  * Class for find result of function.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.FunctionFinderCommand
+ * @see by.goncharov.controller.FunctionFinderCommand
  */
 
 public class FunctionFinder {

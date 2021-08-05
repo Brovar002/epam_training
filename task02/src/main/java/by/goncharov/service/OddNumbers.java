@@ -4,7 +4,7 @@ package by.goncharov.service;
  * Class for calculate sum of odd numbers.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.OddNumbersCommand
+ * @see by.goncharov.controller.OddNumbersCommand
  */
 
 public class OddNumbers {

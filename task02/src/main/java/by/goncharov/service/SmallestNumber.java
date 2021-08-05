@@ -4,7 +4,7 @@ package by.goncharov.service;
  * Class for find smaller number.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.SmallestNumberCommand
+ * @see by.goncharov.controller.SmallestNumberCommand
  */
 
 public class SmallestNumber {

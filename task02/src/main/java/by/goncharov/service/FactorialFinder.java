@@ -4,7 +4,7 @@ package by.goncharov.service;
  * Class for find factorial.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.FactorialFinderCommand
+ * @see by.goncharov.controller.FactorialFinderCommand
  */
 
 public class FactorialFinder {

@@ -9,7 +9,7 @@ import java.util.List;
  * @version 1.0
  * @see ArrayList
  * @see List
- * @see by.goncharov.contoller.DoublingCommand
+ * @see by.goncharov.controller.DoublingCommand
  */
 
 public class Doubling {

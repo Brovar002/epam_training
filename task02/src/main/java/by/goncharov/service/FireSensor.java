@@ -4,7 +4,7 @@ package by.goncharov.service;
  * Class for emulate Fire sensor.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.FireSensorCommand
+ * @see by.goncharov.controller.FireSensorCommand
  */
 
 public class FireSensor {

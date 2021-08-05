@@ -1,15 +1,15 @@
 package by.goncharov.view;
 
-import by.goncharov.contoller.CalculatingSumCommand;
-import by.goncharov.contoller.NumberChangerCommand;
-import by.goncharov.contoller.DivisionWithoutRemainderCommand;
-import by.goncharov.contoller.DoublingCommand;
-import by.goncharov.contoller.FunctionFinderCommand;
-import by.goncharov.contoller.FactorialFinderCommand;
-import by.goncharov.contoller.FireSensorCommand;
-import by.goncharov.contoller.OddNumbersCommand;
-import by.goncharov.contoller.ReplacementCommand;
-import by.goncharov.contoller.SmallestNumberCommand;
+import by.goncharov.controller.CalculatingSumCommand;
+import by.goncharov.controller.NumberChangerCommand;
+import by.goncharov.controller.DivisionWithoutRemainderCommand;
+import by.goncharov.controller.DoublingCommand;
+import by.goncharov.controller.FunctionFinderCommand;
+import by.goncharov.controller.FactorialFinderCommand;
+import by.goncharov.controller.FireSensorCommand;
+import by.goncharov.controller.OddNumbersCommand;
+import by.goncharov.controller.ReplacementCommand;
+import by.goncharov.controller.SmallestNumberCommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.Scanner;

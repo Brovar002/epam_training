@@ -7,7 +7,7 @@ import java.util.Map;
  * Class for translate numbers.
  * @author Goncharov Daniil
  * @version 1.0
- * @see by.goncharov.contoller.NumberChangerCommand
+ * @see by.goncharov.controller.NumberChangerCommand
  */
 
 public class NumberChanger {
