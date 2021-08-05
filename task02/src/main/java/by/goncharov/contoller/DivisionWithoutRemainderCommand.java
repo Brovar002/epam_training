@@ -1,7 +1,7 @@
 package by.goncharov.contoller;
 
 
-
+import by.goncharov.service.DivisionWithoutRemainder;
 
 /**
  * Class for execute calculate number's divisions.
@@ -12,4 +12,11 @@ package by.goncharov.contoller;
  */
 
 public class DivisionWithoutRemainderCommand {
+    int n;
+
+    public int divisionWithoutRemainderCommand(int n) {
+        this.n = n;
+        DivisionWithoutRemainder divisionWithoutRemainder = new DivisionWithoutRemainder();
+        return divisionWithoutRemainder.division(n);
+    }
 }

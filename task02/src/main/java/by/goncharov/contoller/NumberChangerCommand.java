@@ -11,5 +11,11 @@ import by.goncharov.service.NumberChanger;
  */
 
 public class NumberChangerCommand {
+    int n;
 
+    public String numberChanger(int n){
+        this.n = n;
+        NumberChanger numberChanger = new NumberChanger();
+        return numberChanger.numberChanger(n);
+    }
 }

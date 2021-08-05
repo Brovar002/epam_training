@@ -8,27 +8,25 @@ package by.goncharov.service;
  */
 
 public class DivisionWithoutRemainder {
-    boolean bool;
     int i = 1;
     int k;
-    int d;
-    int c;
+    char ch;
     public int division(int n) {
        for (i = 1; i < n; i++){
-           c = n;
-           while (c != 0){
-               k++;
-               if(c % 10 != 0){
-                   if(n % (c % 10) == 0){
-                       d++;
-                   }
+           String str = Integer.toString(i);
+           boolean flag = false;
+           for(k = 0; k < str.length(); k++) {
+               if(n % Character.getNumericValue(ch) == 0) {
+                   flag = true;
                }
-               c = c % 10;
-           }
-           if(d == k){
-               return c;
+               else {
+                   flag = false;
+               }
+               if(flag == true) {
+                   return n;
+               }
            }
        }
-        return c;
+        return n;
     }
 }
