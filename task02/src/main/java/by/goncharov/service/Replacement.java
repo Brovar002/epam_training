@@ -1,25 +1,28 @@
 package by.goncharov.service;
 
-import by.goncharov.service.SmallestNumber;
-import by.goncharov.service.AverageFinder;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Replacement {
     SmallestNumber smallestNumber = new SmallestNumber();
     AverageFinder averageFinder = new AverageFinder();
 
-    public double replacement(double a, double b){
-        if(smallestNumber.smallest(a, b) == a){
+    public List<Double> replacement(double a, double b) {
+        List<Double> list = new ArrayList<Double>();
+        if(smallestNumber.smallest(a, b) == a) {
             a = averageFinder.average(a, b);
             b = (a * b * 2);
-            return a;
+            list.add(a);
+            list.add(b);
         }
         else {
             a = (a * b * 2);
             b = averageFinder.average(a, b);
-
+            list.add(a);
+            list.add(b);
         }
 
-        return b;
+        return list;
 
     }
 }

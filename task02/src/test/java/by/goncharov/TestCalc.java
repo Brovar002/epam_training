@@ -6,7 +6,6 @@ import by.goncharov.service.SmallestNumber;
 import by.goncharov.service.AverageFinder;
 import by.goncharov.service.FactorialFinder;
 import by.goncharov.service.FunctionFinder;
-import by.goncharov.service.Doubling;
 import static org.testng.Assert.assertEquals;
 
 
@@ -22,7 +21,7 @@ public class TestCalc {
     }
 
     @DataProvider(name = "dataForAverage")
-    public Object[][] createDataForAverage(){
+    public Object[][] createDataForAverage() {
         return new Object[][]{
                 {new double[]{3, 5}, 4},
                 {new double[]{-3, 3}, 0},
@@ -30,7 +29,7 @@ public class TestCalc {
                 {new double[]{-3, -5}, -4},
                 {new double[]{-300, 200}, -50},
                 {new double[]{10, 0}, 5}
-                };
+        };
 
     }
 
@@ -58,36 +57,23 @@ public class TestCalc {
                 };
     }
 
-    @DataProvider(name = "dataForDoubling")
-    public Object[][] createDataForDoubling(){
-        return new Object[][]{
-                {new double[]{10, 5, 2}, 4},
-                {new double[]{-3, 3}, 0},
-                {new double[]{0, 0}, 0},
-                {new double[]{-3, -5}, -4},
-                {new double[]{-300, 200}, -50},
-                {new double[]{10, 0}, 5}
-        };
-
-    }
 
     private final AverageFinder averageFinder = new AverageFinder();
     private final SmallestNumber smallestNumber = new SmallestNumber();
     private final FactorialFinder factorialFinder = new FactorialFinder();
     private final FunctionFinder functionFinder = new FunctionFinder();
-    private final Doubling doubling = new Doubling();
 
     @Test(description = "Positive scenery of the find average",
-                dataProvider = "dataForAverage")
-    public void testAverageFinder(double ab[],  double c) {
-       double actual = averageFinder.average(ab[0],ab[1]);
-       double expected = c;
-       assertEquals(actual, expected);
+            dataProvider = "dataForAverage")
+    public void testAverageFinder(double ab[], double c) {
+        double actual = averageFinder.average(ab[0], ab[1]);
+        double expected = c;
+        assertEquals(actual, expected);
     }
 
     @Test(description = "Positive scenery of the find smallest number",
             dataProvider = "dataForSmallest")
-    public void testSmallestNumber(double ab[],  double c) {
+    public void testSmallestNumber(double ab[], double c) {
         double actual = smallestNumber.smallest(ab[0], ab[1]);
         double expected = c;
         assertEquals(actual, expected);
@@ -104,14 +90,6 @@ public class TestCalc {
     @Test(description = "Positive scenery of the find function",
             dataProvider = "dataForFunction")
     public void testFunctionFinder(double[] ab, double c) {
-        double actual = functionFinder.function(ab[0]);
-        double expected = c;
-        assertEquals(actual, expected);
-    }
-
-    @Test(description = "Positive scenery of the find doubling",
-            dataProvider = "dataForDoubling")
-    public void testDoubling(double[] ab, double c) {
         double actual = functionFinder.function(ab[0]);
         double expected = c;
         assertEquals(actual, expected);

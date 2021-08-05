@@ -1,11 +1,13 @@
 package by.goncharov.service;
 
 public class OddNumbers {
-    public void oddNumbers(){
+    int result;
+    public int oddNumbers() {
         int i = 0;
-        while (i != 99){
-            System.out.println(2 * i + 1);
+        while (i !=50) {
+            result +=  2 * i + 1;
             i++;
         }
+        return result;
     }
 }
