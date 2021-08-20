@@ -1,7 +1,7 @@
 package by.goncharov.service;
 
 public class BubbleSort {
-    public static void sort(int[] array) {
+    public static void bubbleSort(int[] array) {
         boolean sorted = false;
         while (!sorted) {
             sorted = true;
