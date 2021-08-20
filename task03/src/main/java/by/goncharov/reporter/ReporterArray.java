@@ -8,12 +8,11 @@ public class ReporterArray {
     public int[] enteringArray(){
 
         System.out.println("Enter array length: ");
-        int size = in.nextInt(); // Читаем с клавиатуры размер массива и записываем в size
-        int[] array = new int[size]; // Создаём массив int размером в size
+        int size = in.nextInt();
+        int[] array = new int[size];
         System.out.println("Insert array elements:");
-        /*Пройдёмся по всему массиву, заполняя его*/
         for (int i = 0; i < size; i++) {
-            array[i] = in.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
+            array[i] = in.nextInt();
         }
         return array;
 

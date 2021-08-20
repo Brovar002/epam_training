@@ -13,11 +13,10 @@ import java.util.Scanner;
 public class Main
 {
     public static void main( String[] args ) throws MatrixException {
-        Scanner in = new Scanner(System.in);
         Logger logger = LogManager.getLogger(Main.class);
         logger.info("Start application.");
         View view = new View();
         view.view();
-
+        logger.info("Exit application. ");
     }
 }
