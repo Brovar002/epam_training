@@ -1,10 +1,14 @@
-package by.goncharov.controller.command;
+package by.goncharov.controller.command.impl;
 
+import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
 import by.goncharov.service.ServiceFactory;
 import by.goncharov.service.SortService;
 
-public class SelectionSortCommand implements Command {
+import java.util.Scanner;
+
+public class BubbleSortCommand implements Command {
+
     @Override
     public String execute(String request) {
         String response = null;
@@ -12,7 +16,8 @@ public class SelectionSortCommand implements Command {
         SortService sortService = serviceFactory.getSortService();
         ReporterArray reporterArray = new ReporterArray();
         int[] array = reporterArray.enteringArray();
-        sortService.selectionSort(array);
+
+        sortService.bubbleSort(array);
         reporterArray.outputArray(array);
 
         return response;

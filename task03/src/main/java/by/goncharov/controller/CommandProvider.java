@@ -1,6 +1,7 @@
 package by.goncharov.controller;
 
 import by.goncharov.controller.command.*;
+import by.goncharov.controller.command.impl.*;
 
 import java.util.HashMap;
 import java.util.Map;

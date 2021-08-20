@@ -1,13 +1,11 @@
-package by.goncharov.controller.command;
+package by.goncharov.controller.command.impl;
 
+import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
 import by.goncharov.service.ServiceFactory;
 import by.goncharov.service.SortService;
 
-import java.util.Scanner;
-
-public class BubbleSortCommand implements Command {
-
+public class ShakerSortCommand implements Command {
     @Override
     public String execute(String request) {
         String response = null;
@@ -15,8 +13,7 @@ public class BubbleSortCommand implements Command {
         SortService sortService = serviceFactory.getSortService();
         ReporterArray reporterArray = new ReporterArray();
         int[] array = reporterArray.enteringArray();
-
-        sortService.bubbleSort(array);
+        sortService.shakerSort(array);
         reporterArray.outputArray(array);
 
         return response;

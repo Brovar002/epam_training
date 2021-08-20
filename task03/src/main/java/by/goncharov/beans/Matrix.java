@@ -13,7 +13,7 @@ public class Matrix {
         array = new int[row][col];
     }
 
-    public Matrix(int ar[][]) {
+    public Matrix(int[][] ar) {
         array = ar;
         row = array.length;
         col = array[0].length;

@@ -1,10 +1,11 @@
-package by.goncharov.controller.command;
+package by.goncharov.controller.command.impl;
 
+import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
 import by.goncharov.service.ServiceFactory;
 import by.goncharov.service.SortService;
 
-public class ShellSortCommand implements Command{
+public class ShellSortCommand implements Command {
     @Override
     public String execute(String request) {
         String response = null;
