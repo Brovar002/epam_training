@@ -6,7 +6,11 @@ public enum CommandName {
     SELECTION_SORT,
     SHAKER_SORT,
     SHELL_SORT,
-    WRONG_REQUEST;
+    WRONG_REQUEST,
+    MULTIPLICATOR,
+    SUMMATION,
+    MATRIX_DIFFERENCE,
+    EXIT,
 }
 
 

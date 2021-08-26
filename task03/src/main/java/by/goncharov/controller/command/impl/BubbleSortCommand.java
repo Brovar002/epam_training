@@ -2,7 +2,6 @@ package by.goncharov.controller.command.impl;
 
 import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
-import by.goncharov.runner.Main;
 import by.goncharov.service.ServiceFactory;
 import by.goncharov.service.SortService;
 import org.apache.logging.log4j.LogManager;
@@ -21,8 +20,8 @@ public class BubbleSortCommand implements Command {
         int[] array = reporterArray.enteringArray();
         logger.info("Bubble sort start. ");
         sortService.bubbleSort(array);
-        logger.info("Bubble sort end. ");
         reporterArray.outputArray(array);
+        logger.info("Bubble sort end. ");
 
         return response;
     }

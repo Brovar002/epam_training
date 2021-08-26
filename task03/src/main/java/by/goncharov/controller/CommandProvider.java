@@ -2,12 +2,7 @@ package by.goncharov.controller;
 
 import by.goncharov.controller.command.Command;
 import by.goncharov.controller.command.CommandName;
-import by.goncharov.controller.command.impl.BubbleSortCommand;
-import by.goncharov.controller.command.impl.InsertionSortCommand;
-import by.goncharov.controller.command.impl.ShellSortCommand;
-import by.goncharov.controller.command.impl.ShakerSortCommand;
-import by.goncharov.controller.command.impl.SelectionSortCommand;
-import by.goncharov.controller.command.impl.WrongRequest;
+import by.goncharov.controller.command.impl.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +19,11 @@ final class CommandProvider {
         repository.put(CommandName.SELECTION_SORT, new SelectionSortCommand());
         repository.put(CommandName.SHAKER_SORT, new ShakerSortCommand());
         repository.put(CommandName.SHELL_SORT, new ShellSortCommand());
+        repository.put(CommandName.MULTIPLICATOR, new MultiplicatorCommand());
+        repository.put(CommandName.SUMMATION, new SummationCommand());
+        repository.put(CommandName.MATRIX_DIFFERENCE, new MatrixDifferenceCommand());
         repository.put(CommandName.WRONG_REQUEST, new WrongRequest());
+        repository.put(CommandName.EXIT, new Exit());
 
     }
 
@@ -35,7 +34,7 @@ final class CommandProvider {
             commandName = CommandName.valueOf(name.toUpperCase());
             command = repository.get(commandName);
         }catch(IllegalArgumentException | NullPointerException e){
-            logger.info("Wrong request");
+            logger.error("Wrong request");
             command = repository.get(CommandName.WRONG_REQUEST);
         }
         return command;

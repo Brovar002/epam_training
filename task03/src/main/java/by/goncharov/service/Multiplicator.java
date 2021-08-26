@@ -2,9 +2,12 @@ package by.goncharov.service;
 
 import by.goncharov.beans.Matrix;
 import by.goncharov.exeptions.MatrixException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Multiplicator {
-    public Matrix multiply(Matrix p, Matrix q) throws MatrixException {
+    static Logger logger = LogManager.getLogger(Multiplicator.class);
+    public static Matrix multiply(Matrix p, Matrix q) throws MatrixException {
         int v = p.getVerticalSize();
         int h = q.getHorizontalSize();
         int controlSize = p.getHorizontalSize();
@@ -23,7 +26,7 @@ public class Multiplicator {
                 }
             }
         } catch (MatrixException e) {
-// log: exception impossible
+        logger.error("Matrix error");
         }
         return result;
     }

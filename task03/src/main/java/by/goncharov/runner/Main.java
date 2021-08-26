@@ -1,9 +1,6 @@
 package by.goncharov.runner;
 
-import by.goncharov.beans.Matrix;
 import by.goncharov.exeptions.MatrixException;
-import by.goncharov.service.MatrixCreator;
-import by.goncharov.service.Multiplicator;
 import by.goncharov.view.View;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

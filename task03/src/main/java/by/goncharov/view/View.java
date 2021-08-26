@@ -1,11 +1,12 @@
 package by.goncharov.view;
 
 import by.goncharov.controller.Controller;
+import by.goncharov.exeptions.MatrixException;
 
 import java.util.Scanner;
 
 public class View {
-    public void view() {
+    public void view() throws MatrixException {
         Scanner in = new Scanner(System.in);
         Controller controller = new Controller();
         System.out.println("Please, make your choice:\n"
@@ -17,7 +18,6 @@ public class View {
                 + "Multiplication matrix;\n"
                 + "Summation_matrix;\n"
                 + "Division_matrix;\n"
-                + "Subtracting_matrix;\n"
                 + "Exit.");
         String request = in.nextLine();
         controller.executeTask(request);

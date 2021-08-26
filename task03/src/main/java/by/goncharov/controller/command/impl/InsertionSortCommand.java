@@ -2,7 +2,6 @@ package by.goncharov.controller.command.impl;
 
 import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
-import by.goncharov.runner.Main;
 import by.goncharov.service.ServiceFactory;
 import by.goncharov.service.SortService;
 import org.apache.logging.log4j.LogManager;
@@ -19,8 +18,8 @@ public class InsertionSortCommand implements Command {
         int[] array = reporterArray.enteringArray();
         logger.info("Insertion sort start. ");
         sortService.insertionSort(array);
-        logger.info("Insertion sort end. ");
         reporterArray.outputArray(array);
+        logger.info("Insertion sort end. ");
         return response;
     }
 }

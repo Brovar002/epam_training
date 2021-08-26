@@ -31,7 +31,7 @@ public class Matrix {
     }
 
     public int getElement(int i, int j) throws MatrixException {
-        if (checkRange(i, j)) { // check i & j
+        if (checkRange(i, j)) {
             return array[i][j];
         } else {
             throw new MatrixException();
@@ -58,13 +58,6 @@ public class Matrix {
     public int sizeMatrix() {
         return row * col;
     }
-    public static void fillMatrix(int[][] matrix) {
-        for (int[] arr : matrix) {
-            for (int i = 0; i < arr.length; i++) {
-                arr[i] = (int) (Math.random() * 9 + 1);
-            }
-        }
-    }
 
     public static void printMatrix(int[][] array) {
         for (int i = 0; i < array.length; i++) {
@@ -75,6 +68,19 @@ public class Matrix {
                 }
             }
         }
+    }
+
+    public String toString() {
+        final String BLANK = " ";
+        StringBuilder s = new StringBuilder("\nMatrix : " + array.length + "x"
+                + array[0].length + "\n");
+        for (int [ ] row : array) {
+            for (int value : row) {
+                s.append(value).append(BLANK);
+            }
+            s.append("\n");
+        }
+        return s.toString();
     }
 
     private boolean checkRange(int i, int j) {
