@@ -1,5 +1,10 @@
 package by.goncharov.service;
 
+import by.goncharov.service.matrix.MatrixService;
+import by.goncharov.service.matrix.MatrixServiceImpl;
+import by.goncharov.service.sort.SortService;
+import by.goncharov.service.sort.SortServiceImpl;
+
 public final class ServiceFactory {
     private static final ServiceFactory instance = new ServiceFactory();
     private final SortServiceImpl sortService = new SortServiceImpl();

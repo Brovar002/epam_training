@@ -1,4 +1,4 @@
-package by.goncharov.service;
+package by.goncharov.service.sort;
 
 public class BubbleSort {
     public static void bubbleSort(int[] array) {

@@ -1,4 +1,4 @@
-package by.goncharov.service;
+package by.goncharov.service.matrix;
 
 import by.goncharov.beans.Matrix;
 import by.goncharov.exeptions.MatrixException;

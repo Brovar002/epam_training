@@ -11,10 +11,10 @@
         </File>
     </Appenders>
     <Loggers>
-        <Root level="info">
+        <Root level="all">
             <AppenderRef ref="Console"/>
         </Root>
-        <Logger name ="by.goncharov.task03.view.View" level="info"
+        <Logger name ="by.goncharov.task03" level="all"
                 additivity="true">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="log"/>

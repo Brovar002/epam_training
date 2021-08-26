@@ -4,7 +4,7 @@ import by.goncharov.beans.Matrix;
 import by.goncharov.controller.command.Command;
 import by.goncharov.exeptions.MatrixException;
 import by.goncharov.reporter.ReporterMatrix;
-import by.goncharov.service.MatrixService;
+import by.goncharov.service.matrix.MatrixService;
 import by.goncharov.service.ServiceFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

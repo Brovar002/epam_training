@@ -1,4 +1,4 @@
-package by.goncharov.service;
+package by.goncharov.service.sort;
 
 public class ShellSort {
     public static void shellSort(int[] array) {

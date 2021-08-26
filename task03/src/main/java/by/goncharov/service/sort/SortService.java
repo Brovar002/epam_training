@@ -1,4 +1,4 @@
-package by.goncharov.service;
+package by.goncharov.service.sort;
 
 public interface SortService {
     void bubbleSort(int[] array);

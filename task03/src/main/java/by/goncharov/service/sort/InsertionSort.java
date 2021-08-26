@@ -1,4 +1,4 @@
-package by.goncharov.service;
+package by.goncharov.service.sort;
 
 public class InsertionSort {
     public static void insertionSort(int[] array) {

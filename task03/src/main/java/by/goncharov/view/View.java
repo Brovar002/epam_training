@@ -15,11 +15,12 @@ public class View {
                 + "Selection_sort;\n"
                 + "Shaker_sort;\n"
                 + "Shell_sort;\n"
-                + "Multiplication matrix;\n"
-                + "Summation_matrix;\n"
-                + "Division_matrix;\n"
+                + "Multiplication;\n"
+                + "Summation;\n"
+                + "Matrix_difference;\n"
                 + "Exit.");
         String request = in.nextLine();
         controller.executeTask(request);
-
-    }}
+        view();
+    }
+}

@@ -3,7 +3,7 @@ package by.goncharov.controller.command.impl;
 import by.goncharov.controller.command.Command;
 import by.goncharov.reporter.ReporterArray;
 import by.goncharov.service.ServiceFactory;
-import by.goncharov.service.SortService;
+import by.goncharov.service.sort.SortService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
