@@ -15,3 +15,4 @@ public class ShellSort {
         }
     }
 }
+//TODO remove static and get Array
