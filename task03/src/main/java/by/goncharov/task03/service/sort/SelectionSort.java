@@ -13,8 +13,8 @@ public class SelectionSort {
                 }
             }
             int buffer = array.getElement(i);
-            buffer = array.getElement(smallest);
-            //array[smallest] = buffer;
+            array.setElement(i, array.getElement(smallest));
+            array.setElement(smallest, buffer);
         }
     }
 }

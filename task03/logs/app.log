@@ -1,0 +1,39 @@
+2021-09-06 16:43:22,024 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:43:31,225 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-06 16:43:31,226 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort end. 
+2021-09-06 16:44:03,656 INFO b.g.t.c.c.i.Exit [main] Exit application. 
+2021-09-06 16:45:25,025 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:45:37,228 ERROR b.g.t.c.CommandProvider [main] Wrong request
+2021-09-06 16:46:04,550 INFO b.g.t.c.c.i.MultiplicatorCommand [main] Matrix's multiplication start. 
+2021-09-06 16:46:04,551 INFO b.g.t.c.c.i.MultiplicatorCommand [main] Matrix's multiplication end. 
+2021-09-06 16:46:20,333 INFO b.g.t.c.c.i.Exit [main] Exit application. 
+2021-09-06 16:47:48,433 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:48:00,472 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-06 16:48:00,472 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort end. 
+2021-09-06 16:48:56,938 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:49:12,058 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-06 16:50:36,160 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:50:46,264 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-06 16:50:46,265 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort end. 
+2021-09-06 16:57:06,452 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 16:57:17,426 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-06 16:57:17,426 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort end. 
+2021-09-06 17:00:56,459 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:01:08,995 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort start. 
+2021-09-06 17:03:25,156 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:03:37,529 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort start. 
+2021-09-06 17:03:37,529 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort end. 
+2021-09-06 17:06:02,771 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:06:14,509 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort start. 
+2021-09-06 17:06:14,509 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort end. 
+2021-09-06 17:06:38,194 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:06:51,930 INFO b.g.t.c.c.i.InsertionSortCommand [main] Insertion sort start. 
+2021-09-06 17:08:48,235 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:08:59,302 INFO b.g.t.c.c.i.SelectionSortCommand [main] Selection sort start. 
+2021-09-06 17:08:59,303 INFO b.g.t.c.c.i.SelectionSortCommand [main] Selection sort end. 
+2021-09-06 17:11:54,876 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:12:07,016 INFO b.g.t.c.c.i.ShakerSortCommand [main] Shaker sort start. 
+2021-09-06 17:12:07,017 INFO b.g.t.c.c.i.ShakerSortCommand [main] Shaker sort end. 
+2021-09-06 17:15:19,973 INFO b.g.t.r.Main [main] Start application.
+2021-09-06 17:15:33,217 INFO b.g.t.c.c.i.ShellSortCommand [main] Shell sort start. 
+2021-09-06 17:15:33,218 INFO b.g.t.c.c.i.ShellSortCommand [main] Shell sort end. 

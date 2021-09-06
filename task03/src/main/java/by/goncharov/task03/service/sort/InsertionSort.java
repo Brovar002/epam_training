@@ -9,11 +9,11 @@ public class InsertionSort {
             int x = array.getElement(i);
             int j = i;
             while (j > 0 && array.getElement(j-1) > x) {
-                int temp = array.getElement(j);
-                temp = array.getElement(j - 1);
+                array.setElement(j, j-1);
                 --j;
             }
-            x = array.getElement(j);
+            array.setElement(j, x);
+            //x = array.getElement(j);
         }
     }
 }

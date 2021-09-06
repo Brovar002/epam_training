@@ -12,14 +12,13 @@ public class ShellSort {
                 int key = array.getElement(i);
                 int j = i;
                 while (j >= gap && array.getElement(j - gap) > key) {
-                    buff = array.getElement(j);
-                    secondBuff = array.getElement(j-gap);
-                    buff = secondBuff;
+                    array.setElement(j, j - gap);
                     j -= gap;
                 }
-                key = array.getElement(j);
+                array.setElement(j, key);
             }
         }
     }
 }
+
 //TODO remove static and get Array
