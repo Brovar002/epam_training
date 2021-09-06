@@ -1,9 +1,5 @@
 package by.goncharov.task04.runner;
 
-/**
- * Hello world!
- *
- */
 public class Main
 {
     public static void main( String[] args )
