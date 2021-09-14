@@ -5,6 +5,11 @@ import java.util.Objects;
 public class Engine {
     private int number;
     private double power;
+
+    public Engine() {
+
+    }
+
     public Engine(int number, double power) {
         this.number = number;
         this.power = power;

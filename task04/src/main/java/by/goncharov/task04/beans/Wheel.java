@@ -9,6 +9,7 @@ public class Wheel {
     private String brand;
     private Type type;
 
+
     public Wheel(String brand, double diameter, Type type) {
         this.brand = brand;
         this.diameter = diameter;

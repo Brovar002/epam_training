@@ -1,6 +1,8 @@
 package by.goncharov.task04.dao;
 
-import java.io.FileReader;
+import by.goncharov.task04.dao.exception.DaoException;
+import by.goncharov.task04.service.reader.FileReader;
+import by.goncharov.task04.service.reader.FileReaderException;
 
 public class CarDao {
     public  String readCar() throws DaoException {

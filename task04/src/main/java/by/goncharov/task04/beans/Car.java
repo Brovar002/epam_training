@@ -4,27 +4,27 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Car {
-    private Wheel[] wheels;
+    private Wheel wheel;
     private Engine engine;
     private String brand;
     private double consumption;
     private double fuelLevel;
 
     public Car(String brand, double consumption,
-               Engine engine, Wheel[] wheels, double fuelLevel) {
+               Engine engine, Wheel wheel, double fuelLevel) {
         this.brand = brand;
         this.consumption = consumption;
         this.engine = engine;
-        this.wheels = wheels;
+        this.wheel = wheel;
         this.fuelLevel = fuelLevel;
     }
 
-    public Wheel[] getWheels() {
-        return wheels;
+    public Wheel getWheel() {
+        return wheel;
     }
 
-    public void setWheels(Wheel[] wheels) {
-        this.wheels = wheels;
+    public void setWheel(Wheel wheels) {
+        this.wheel = wheel;
     }
 
     public Engine getEngine() {
@@ -64,14 +64,12 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return Double.compare(car.consumption, consumption) == 0 && Double.compare(car.fuelLevel, fuelLevel) == 0 && Arrays.equals(wheels, car.wheels) && engine.equals(car.engine) && brand.equals(car.brand);
+        return Double.compare(car.consumption, consumption) == 0 && Double.compare(car.fuelLevel, fuelLevel) == 0 && Objects.equals(wheel, car.wheel) && Objects.equals(engine, car.engine) && Objects.equals(brand, car.brand);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(engine, brand, consumption, fuelLevel);
-        result = 31 * result + Arrays.hashCode(wheels);
-        return result;
+        return Objects.hash(wheel, engine, brand, consumption, fuelLevel);
     }
 
     @Override
@@ -79,7 +77,7 @@ public class Car {
         String string = "";
         string += brand + engine.toString() + ";" + consumption + "L/100km { " + fuelLevel + "}; [";
         for (int i = 0; i < 4; ++i) {
-            string += wheels[i].toString() + " ";
+            string += wheel.toString() + " ";
         }
         return string + "]";
     }
