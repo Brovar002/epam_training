@@ -1,5 +1,7 @@
 package by.goncharov.task04.beans;
 
+import java.util.Objects;
+
 public class Wheel {
     public enum Type { Winter, Summer }
 
@@ -25,7 +27,42 @@ public class Wheel {
         return string;
     }
 
-    public double get_diameter() {
+    public double getDiameter() {
         return diameter;
     }
+
+    public void setDiameter(double diameter) {
+        this.diameter = diameter;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Wheel wheel = (Wheel) o;
+        return Double.compare(wheel.diameter, diameter) == 0 && brand.equals(wheel.brand) && type == wheel.type;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(diameter, brand, type);
+    }
 }
+
+
