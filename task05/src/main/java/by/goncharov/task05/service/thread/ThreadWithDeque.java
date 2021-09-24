@@ -1,7 +1,6 @@
 package by.goncharov.task05.service.thread;
 
 import by.goncharov.task05.beans.Matrix;
-import by.goncharov.task05.service.PutNumbersInMainDiagonal;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
@@ -27,7 +26,6 @@ public class ThreadWithDeque extends PutterThread {
             while (!indexes.isEmpty()) {
                 semaphore.acquire();
                 matrix.put(indexes.getFirst(), indexes.removeFirst(), number);
-                PutNumbersInMainDiagonal.inc();//для теста
                 String logInfo = getName() + " put " + number;
                 logger.log(Level.INFO, logInfo);
                 semaphore.release();

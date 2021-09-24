@@ -1,7 +1,6 @@
 package by.goncharov.task05.service.thread;
 
 import by.goncharov.task05.beans.Matrix;
-import by.goncharov.task05.service.PutNumbersInMainDiagonal;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
@@ -29,7 +28,6 @@ public class ThreadWithCountDownLatch extends PutterThread {
             String logInfo = getName() + " put " + number;
             logger.log(Level.INFO, logInfo);
             latch.countDown();
-            PutNumbersInMainDiagonal.inc();//для теста
             try {
                 TimeUnit.MILLISECONDS.sleep(50);
             } catch (InterruptedException e) {
