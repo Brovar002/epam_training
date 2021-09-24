@@ -1,0 +1,44 @@
+package by.goncharov.task05.service.thread;
+
+import by.goncharov.task05.beans.Matrix;
+import by.goncharov.task05.service.PutNumbersInMainDiagonal;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
+
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.TimeUnit;
+
+
+public class ThreadWithSemaphore extends PutterThread {
+    Semaphore sema;
+    Logger logger = (Logger) LogManager.getLogger(ThreadWithSemaphore.class);
+
+    public ThreadWithSemaphore(Matrix matrix, Semaphore semaphore, int number) {
+        super(matrix, number);
+        this.sema = semaphore;
+    }
+
+    @Override
+    public void run(){
+        while (true) {
+            try {
+                sema.acquire();
+                if (PutNumbersInMainDiagonal.getIndex() >= matrix.getRows()) {
+                    break;
+                }
+                matrix.put(PutNumbersInMainDiagonal.getIndex(), PutNumbersInMainDiagonal.getIndex(),
+                        number);
+                String logInfo = getName() + " put " + number;
+                logger.log(Level.INFO, logInfo);
+                PutNumbersInMainDiagonal.inc();
+                TimeUnit.MILLISECONDS.sleep(50);
+            } catch (InterruptedException e) {
+                logger.error(e);
+            }
+            finally {
+                sema.release();
+            }
+        }
+    }
+}

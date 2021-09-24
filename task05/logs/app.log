@@ -1,0 +1,87 @@
+2021-09-24 00:32:12,476 INFO b.g.t.c.r.Runner [main] Start application
+2021-09-24 00:37:38,192 INFO b.g.t.c.r.Runner [main] Start application
+2021-09-24 00:37:40,564 INFO b.g.t.s.t.l.ThreadWithLock [Thread 1] Thread 1 put 2
+2021-09-24 00:37:40,576 INFO b.g.t.s.t.l.ThreadWithLock [Thread 2] Thread 2 put 3
+2021-09-24 00:37:40,589 INFO b.g.t.s.t.l.ThreadWithLock [Thread 3] Thread 3 put 1
+2021-09-24 00:37:40,601 INFO b.g.t.s.t.l.ThreadWithLock [Thread 4] Thread 4 put 5
+2021-09-24 00:37:40,616 INFO b.g.t.s.t.l.ThreadWithLock [Thread 5] Thread 5 put 4
+2021-09-24 00:37:40,924 INFO b.g.t.s.t.s.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 00:37:40,979 INFO b.g.t.s.t.s.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,035 INFO b.g.t.s.t.s.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,094 INFO b.g.t.s.t.s.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,146 INFO b.g.t.s.t.s.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,300 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,310 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 2] Thread 2 put 3
+2021-09-24 00:37:41,322 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 3] Thread 3 put 1
+2021-09-24 00:37:41,338 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 4] Thread 4 put 5
+2021-09-24 00:37:41,353 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,353 INFO b.g.t.s.t.c.ThreadWithCountDownLatch [Thread 5] Thread 5 put 4
+2021-09-24 00:37:41,665 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 1] Thread 1 put 2
+2021-09-24 00:37:41,666 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 1] Thread 1 end 0 phase
+2021-09-24 00:37:41,676 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 2] Thread 2 put 3
+2021-09-24 00:37:41,676 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 2] Thread 2 end 1 phase
+2021-09-24 00:37:41,687 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 3] Thread 3 put 1
+2021-09-24 00:37:41,688 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 3] Thread 3 end 1 phase
+2021-09-24 00:37:41,699 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 4] Thread 4 put 5
+2021-09-24 00:37:41,699 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 4] Thread 4 end 1 phase
+2021-09-24 00:37:41,714 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 5] Thread 5 put 4
+2021-09-24 00:37:41,714 INFO b.g.t.s.t.p.ThreadWithPhaser [Thread 5] Thread 5 end 1 phase
+2021-09-24 00:37:42,025 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,040 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 2] Thread 2 put 3
+2021-09-24 00:37:42,052 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 3] Thread 3 put 1
+2021-09-24 00:37:42,068 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 4] Thread 4 put 5
+2021-09-24 00:37:42,083 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,084 INFO b.g.t.s.t.s.SimpleThreadWithBoolean [Thread 5] Thread 5 put 4
+2021-09-24 00:37:42,408 INFO b.g.t.s.t.d.ThreadWithDeque [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,423 INFO b.g.t.s.t.d.ThreadWithDeque [Thread 2] Thread 2 put 3
+2021-09-24 00:37:42,439 INFO b.g.t.s.t.d.ThreadWithDeque [Thread 3] Thread 3 put 1
+2021-09-24 00:37:42,454 INFO b.g.t.s.t.d.ThreadWithDeque [Thread 4] Thread 4 put 5
+2021-09-24 00:37:42,468 INFO b.g.t.s.t.d.ThreadWithDeque [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,787 INFO b.g.t.s.t.a.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,788 INFO b.g.t.s.t.a.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,797 INFO b.g.t.s.t.a.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 00:37:42,798 INFO b.g.t.s.t.a.ThreadWithAtomic [Thread 2] Thread 2 put 3
+2021-09-24 00:37:42,799 INFO b.g.t.s.t.a.ThreadWithAtomic [Thread 2] Thread 2 put 3
+2021-09-24 00:37:43,159 INFO b.g.t.c.r.Runner [main] Finish application
+2021-09-24 15:11:26,219 INFO b.g.t.c.r.Runner [main] Start application
+2021-09-24 15:11:30,264 INFO b.g.t.s.t.ThreadWithLock [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,275 INFO b.g.t.s.t.ThreadWithLock [Thread 2] Thread 2 put 3
+2021-09-24 15:11:30,287 INFO b.g.t.s.t.ThreadWithLock [Thread 3] Thread 3 put 1
+2021-09-24 15:11:30,298 INFO b.g.t.s.t.ThreadWithLock [Thread 4] Thread 4 put 5
+2021-09-24 15:11:30,312 INFO b.g.t.s.t.ThreadWithLock [Thread 5] Thread 5 put 4
+2021-09-24 15:11:30,617 INFO b.g.t.s.t.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,669 INFO b.g.t.s.t.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,725 INFO b.g.t.s.t.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,782 INFO b.g.t.s.t.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,834 INFO b.g.t.s.t.ThreadWithSemaphore [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,976 INFO b.g.t.s.t.ThreadWithCountDownLatch [Thread 1] Thread 1 put 2
+2021-09-24 15:11:30,987 INFO b.g.t.s.t.ThreadWithCountDownLatch [Thread 2] Thread 2 put 3
+2021-09-24 15:11:30,997 INFO b.g.t.s.t.ThreadWithCountDownLatch [Thread 3] Thread 3 put 1
+2021-09-24 15:11:31,010 INFO b.g.t.s.t.ThreadWithCountDownLatch [Thread 4] Thread 4 put 5
+2021-09-24 15:11:31,023 INFO b.g.t.s.t.ThreadWithCountDownLatch [Thread 5] Thread 5 put 4
+2021-09-24 15:11:31,321 INFO b.g.t.s.t.ThreadWithPhaser [Thread 1] Thread 1 put 2
+2021-09-24 15:11:31,322 INFO b.g.t.s.t.ThreadWithPhaser [Thread 1] Thread 1 end 0 phase
+2021-09-24 15:11:31,331 INFO b.g.t.s.t.ThreadWithPhaser [Thread 2] Thread 2 put 3
+2021-09-24 15:11:31,332 INFO b.g.t.s.t.ThreadWithPhaser [Thread 2] Thread 2 end 1 phase
+2021-09-24 15:11:31,341 INFO b.g.t.s.t.ThreadWithPhaser [Thread 3] Thread 3 put 1
+2021-09-24 15:11:31,343 INFO b.g.t.s.t.ThreadWithPhaser [Thread 3] Thread 3 end 1 phase
+2021-09-24 15:11:31,352 INFO b.g.t.s.t.ThreadWithPhaser [Thread 4] Thread 4 put 5
+2021-09-24 15:11:31,353 INFO b.g.t.s.t.ThreadWithPhaser [Thread 4] Thread 4 end 1 phase
+2021-09-24 15:11:31,363 INFO b.g.t.s.t.ThreadWithPhaser [Thread 5] Thread 5 put 4
+2021-09-24 15:11:31,364 INFO b.g.t.s.t.ThreadWithPhaser [Thread 5] Thread 5 end 1 phase
+2021-09-24 15:11:31,666 INFO b.g.t.s.t.ThreadWithBoolean [Thread 1] Thread 1 put 2
+2021-09-24 15:11:31,676 INFO b.g.t.s.t.ThreadWithBoolean [Thread 2] Thread 2 put 3
+2021-09-24 15:11:31,688 INFO b.g.t.s.t.ThreadWithBoolean [Thread 3] Thread 3 put 1
+2021-09-24 15:11:31,701 INFO b.g.t.s.t.ThreadWithBoolean [Thread 4] Thread 4 put 5
+2021-09-24 15:11:31,712 INFO b.g.t.s.t.ThreadWithBoolean [Thread 5] Thread 5 put 4
+2021-09-24 15:11:32,016 INFO b.g.t.s.t.ThreadWithDeque [Thread 1] Thread 1 put 2
+2021-09-24 15:11:32,026 INFO b.g.t.s.t.ThreadWithDeque [Thread 2] Thread 2 put 3
+2021-09-24 15:11:32,040 INFO b.g.t.s.t.ThreadWithDeque [Thread 3] Thread 3 put 1
+2021-09-24 15:11:32,050 INFO b.g.t.s.t.ThreadWithDeque [Thread 4] Thread 4 put 5
+2021-09-24 15:11:32,060 INFO b.g.t.s.t.ThreadWithDeque [Thread 5] Thread 5 put 4
+2021-09-24 15:11:32,365 INFO b.g.t.s.t.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 15:11:32,366 INFO b.g.t.s.t.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 15:11:32,367 INFO b.g.t.s.t.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 15:11:32,367 INFO b.g.t.s.t.ThreadWithAtomic [Thread 1] Thread 1 put 2
+2021-09-24 15:11:32,377 INFO b.g.t.s.t.ThreadWithAtomic [Thread 2] Thread 2 put 3
+2021-09-24 15:11:32,711 INFO b.g.t.c.r.Runner [main] Finish application

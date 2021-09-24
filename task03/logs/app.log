@@ -37,3 +37,8 @@
 2021-09-06 17:15:19,973 INFO b.g.t.r.Main [main] Start application.
 2021-09-06 17:15:33,217 INFO b.g.t.c.c.i.ShellSortCommand [main] Shell sort start. 
 2021-09-06 17:15:33,218 INFO b.g.t.c.c.i.ShellSortCommand [main] Shell sort end. 
+2021-09-15 18:40:12,506 INFO b.g.t.r.Main [main] Start application.
+2021-09-15 18:40:34,228 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort start. 
+2021-09-15 18:40:34,230 INFO b.g.t.c.c.i.BubbleSortCommand [main] Bubble sort end. 
+2021-09-15 18:40:59,250 INFO b.g.t.c.c.i.SummationCommand [main] Matrix's summation start. 
+2021-09-15 18:40:59,251 INFO b.g.t.c.c.i.SummationCommand [main] Matrix's summation end. 

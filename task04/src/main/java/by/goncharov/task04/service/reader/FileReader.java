@@ -14,7 +14,7 @@ public class FileReader {
             File file = new File("src/main/resources/" + fileName);
             return new String(Files.readAllBytes(file.toPath()));
         } catch (IOException e) {
-            throw new FileReaderException("no file hase been found!");
+            throw new FileReaderException("File error");
         }
 
     }
