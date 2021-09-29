@@ -1,10 +1,10 @@
-package by.goncharov;
+package by.goncharov.task07.runner;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Runner
 {
     public static void main( String[] args )
     {
