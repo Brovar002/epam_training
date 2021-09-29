@@ -4,7 +4,7 @@ import by.goncharov.task06.entities.CustomShape;
 import by.goncharov.task06.repository.Specification;
 
 public class IdSpecification implements Specification {
-	private long id;
+	private final long id;
 
 	public IdSpecification(long id) {
 		this.id = id;
@@ -12,8 +12,7 @@ public class IdSpecification implements Specification {
 
 	@Override
 	public boolean specify(CustomShape shape) {
-		boolean result = (shape.getId() == id);
-		return result;
+		return (shape.getId() == id);
 	}
 	
 }

@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 
 public class CubeObserver implements ShapeObserver {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 
 	@Override
 	public void valueChanged(CubeEvent event) throws ShapeException {

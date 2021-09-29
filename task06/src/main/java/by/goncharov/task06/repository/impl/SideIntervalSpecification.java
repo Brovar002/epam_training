@@ -5,8 +5,8 @@ import by.goncharov.task06.entities.CustomShape;
 import by.goncharov.task06.repository.Specification;
 
 public class SideIntervalSpecification implements Specification {
-	private double minSide;
-	private double maxSide;
+	private final double minSide;
+	private final double maxSide;
 
 	public SideIntervalSpecification(double minSide, double maxSide) {
 		this.minSide = minSide;
@@ -16,7 +16,6 @@ public class SideIntervalSpecification implements Specification {
 	@Override
 	public boolean specify(CustomShape shape) {
 		double side = ((Cube) shape).getHeight();
-		boolean result = (side >= minSide && side <= maxSide);
-		return result;
+		return  (side >= minSide && side <= maxSide);
 	}
 }

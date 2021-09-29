@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 
 public class CubeFactory extends ShapeFactory {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 
 	@Override
 	public CustomShape createShape(CustomPoint[] points) throws ShapeException {

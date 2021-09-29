@@ -5,7 +5,7 @@ import by.goncharov.task06.util.IdGenerator;
 public abstract class CustomShape {
 	private long id;
 	
-	public CustomShape() {
+	protected CustomShape() {
 		this.id = IdGenerator.generateId();
 	}
 	

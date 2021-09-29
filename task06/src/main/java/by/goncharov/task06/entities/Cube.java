@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Cube extends CustomShape implements Observable {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	private CustomPoint pointA;
 	private CustomPoint pointB;
 	private List<ShapeObserver> observers = new ArrayList<>();
@@ -50,8 +50,8 @@ public class Cube extends CustomShape implements Observable {
 	}
 	
 	public double getHeight() {
-		double height = Math.abs(pointA.getY());
-		return height;
+		return Math.abs(pointA.getY());
+
 	}
 
 	@Override

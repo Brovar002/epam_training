@@ -10,10 +10,11 @@ import java.util.stream.Collectors;
 import by.goncharov.task06.entities.CustomShape;
 
 public class ShapeRepository {
-	private final static ShapeRepository repository = new ShapeRepository();
-	private List<CustomShape> shapes = new ArrayList<>();
+	private static final ShapeRepository repository = new ShapeRepository();
+	private final List<CustomShape> shapes = new ArrayList<>();
 	
 	public ShapeRepository() {
+		//
 	}
 	
 	public static ShapeRepository getShapeRepository () {
@@ -49,10 +50,9 @@ public class ShapeRepository {
 	}
 	
 	public List<CustomShape> query(Specification specification) {
-		List<CustomShape> list = shapes.stream()
-										.filter(o -> specification.specify(o))
+		return shapes.stream()
+										.filter(specification::specify)
 										.collect(Collectors.toList());
-		return list;
 	}
 	
 	public List<CustomShape> sort(Comparator<CustomShape> comparator) {

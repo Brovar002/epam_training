@@ -19,7 +19,7 @@ public class AreaIntervalSpecification implements Specification {
 	@Override
 	public boolean specify(CustomShape shape) {
 		double area = cubeAction.area((Cube) shape);
-		boolean result = (area >= minArea && area <= maxArea);
-		return result;
+		return  (area >= minArea && area <= maxArea);
+
 	}
 }

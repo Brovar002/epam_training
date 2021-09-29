@@ -7,9 +7,9 @@ import by.goncharov.task06.entities.CustomShape;
 import by.goncharov.task06.repository.Specification;
 
 public class VolumeIntervalSpecification implements Specification {
-	private double minVolume;
-	private double maxVolume;
-	private CubeAction cubeAction;
+	private final double minVolume;
+	private final double maxVolume;
+	private final CubeAction cubeAction;
 
 	public VolumeIntervalSpecification(double minVolume, double maxVolume) {
 		this.minVolume = minVolume;
@@ -20,7 +20,6 @@ public class VolumeIntervalSpecification implements Specification {
 	@Override
 	public boolean specify(CustomShape shape) {
 		double volume = cubeAction.volume((Cube) shape);
-		boolean result = (volume >= minVolume && volume <= maxVolume);
-		return result;
+		return  (volume >= minVolume && volume <= maxVolume);
 	}
 }

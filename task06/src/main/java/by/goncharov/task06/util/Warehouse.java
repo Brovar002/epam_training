@@ -8,8 +8,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Warehouse {
-	public static Logger log = LogManager.getLogger();
-	private final static Warehouse warehouse = new Warehouse();
+	public static final Logger log = LogManager.getLogger();
+	private static final Warehouse warehouse = new Warehouse();
 	private Map<Long, ShapeValues> shapesValues = new HashMap<>();
 	
 	private Warehouse() {

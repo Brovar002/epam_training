@@ -13,7 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ShapeFileReader {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	
 	public List<String> readFromFile (String filename) throws ShapeException {
 		Path path = Paths.get(filename);
@@ -28,7 +28,9 @@ public class ShapeFileReader {
 			log.error("file " + filename + " read error");
 			throw new ShapeException("file " + filename + " read error", e);
 		}
+
 		log.info("read data from file: " + filename);
+
 		return result;
 	}
 }

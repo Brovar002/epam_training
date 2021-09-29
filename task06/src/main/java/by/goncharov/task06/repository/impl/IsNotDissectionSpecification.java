@@ -6,7 +6,7 @@ import by.goncharov.task06.entities.CustomShape;
 import by.goncharov.task06.repository.Specification;
 
 public class IsNotDissectionSpecification implements Specification {
-	private CubeAction cubeAction;
+	private final CubeAction cubeAction;
 
 	public IsNotDissectionSpecification() {
 		cubeAction = new CubeAction();
@@ -16,7 +16,6 @@ public class IsNotDissectionSpecification implements Specification {
 	public boolean specify(CustomShape shape) {
 		double dessectionXY = cubeAction.dissectionXY((Cube) shape);
 		double dessectionYZ = cubeAction.dissectionYZ((Cube) shape);
-		boolean result = ((dessectionXY + dessectionYZ) == 0);
-		return result;
+		return  ((dessectionXY + dessectionYZ) == 0);
 	}
 }

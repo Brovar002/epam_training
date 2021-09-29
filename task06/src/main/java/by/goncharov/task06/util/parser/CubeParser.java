@@ -12,11 +12,11 @@ import org.apache.logging.log4j.Logger;
 
 
 public class CubeParser {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	private static final String DELIMETER ="\\s";
 	
 	public List<CustomPoint[]> parseShape(List<String> data) throws ShapeException {
-		if (data == null || data.size() == 0) {
+		if (data == null || data.isEmpty()) {
 			log.error("data not available");
 			throw new ShapeException("data not available");
 		}
