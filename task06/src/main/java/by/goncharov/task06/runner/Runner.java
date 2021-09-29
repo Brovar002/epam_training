@@ -1,4 +1,4 @@
-package by.goncharov.task06;
+package by.goncharov.task06.runner;
 
 /**
  * Hello world!
