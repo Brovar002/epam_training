@@ -1,4 +1,4 @@
-package by.goncharov.task06.reader;
+package by.goncharov.task06.util.reader;
 
 import java.io.IOException;
 import java.nio.file.Files;

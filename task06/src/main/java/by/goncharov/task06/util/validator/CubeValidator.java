@@ -1,4 +1,4 @@
-package by.goncharov.task06.validator;
+package by.goncharov.task06.util.validator;
 
 import by.goncharov.task06.entities.CustomPoint;
 

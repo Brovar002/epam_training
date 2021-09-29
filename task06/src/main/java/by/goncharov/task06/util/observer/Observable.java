@@ -1,4 +1,4 @@
-package by.goncharov.task06.observer;
+package by.goncharov.task06.util.observer;
 
 public interface Observable {
 	void attach(ShapeObserver observer);

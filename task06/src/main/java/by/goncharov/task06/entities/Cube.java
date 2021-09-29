@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import by.goncharov.task06.excepton.ShapeException;
-import by.goncharov.task06.observer.CubeEvent;
-import by.goncharov.task06.observer.Observable;
-import by.goncharov.task06.observer.ShapeObserver;
+import by.goncharov.task06.util.observer.CubeEvent;
+import by.goncharov.task06.util.observer.Observable;
+import by.goncharov.task06.util.observer.ShapeObserver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

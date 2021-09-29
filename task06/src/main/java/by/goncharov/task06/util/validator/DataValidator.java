@@ -1,4 +1,4 @@
-package by.goncharov.task06.validator;
+package by.goncharov.task06.util.validator;
 
 public class DataValidator {
 	private static final String PATTERN = "((\\-)?\\d+(\\.\\d+)?\\s?){5}";

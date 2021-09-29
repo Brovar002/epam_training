@@ -1,12 +1,12 @@
-package by.goncharov.task06.parser;
+package by.goncharov.task06.util.parser;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import by.goncharov.task06.entities.CustomPoint;
 import by.goncharov.task06.excepton.ShapeException;
-import by.goncharov.task06.validator.CubeValidator;
-import by.goncharov.task06.validator.DataValidator;
+import by.goncharov.task06.util.validator.CubeValidator;
+import by.goncharov.task06.util.validator.DataValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

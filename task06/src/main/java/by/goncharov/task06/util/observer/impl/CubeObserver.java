@@ -1,11 +1,11 @@
-package by.goncharov.task06.observer.impl;
+package by.goncharov.task06.util.observer.impl;
 
 import by.goncharov.task06.action.CubeAction;
 import by.goncharov.task06.entities.Cube;
 import by.goncharov.task06.entities.ShapeValues;
 import by.goncharov.task06.excepton.ShapeException;
-import by.goncharov.task06.observer.CubeEvent;
-import by.goncharov.task06.observer.ShapeObserver;
+import by.goncharov.task06.util.observer.CubeEvent;
+import by.goncharov.task06.util.observer.ShapeObserver;
 import by.goncharov.task06.util.Warehouse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

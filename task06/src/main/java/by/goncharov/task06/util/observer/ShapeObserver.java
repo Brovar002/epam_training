@@ -1,4 +1,4 @@
-package by.goncharov.task06.observer;
+package by.goncharov.task06.util.observer;
 
 
 import by.goncharov.task06.excepton.ShapeException;
