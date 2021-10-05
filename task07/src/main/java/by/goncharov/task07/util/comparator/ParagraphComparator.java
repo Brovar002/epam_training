@@ -1,4 +1,4 @@
-package by.goncharov.task07.comparator;
+package by.goncharov.task07.util.comparator;
 
 import java.util.Comparator;
 

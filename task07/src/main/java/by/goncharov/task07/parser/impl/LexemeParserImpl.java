@@ -12,15 +12,15 @@ import org.apache.logging.log4j.Logger;
 
 
 public class LexemeParserImpl implements TextParser {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	private TextParser parser = new WordParserImpl();
-	public final static String WORD_CODE = "\\w+\\.\\w+\\(.*\\)";
-	public final static String PUNCTUATION_MARK = "(\\p{Punct})";
-	public final static String MARK_WORD_MARK = "(\\p{Punct}.+\\p{Punct})";
-	public final static String MARK_WORD = "(\\p{Punct}.+)";
-	public final static String CODE_MARK = "\\w+\\.\\w+\\(.*\\)\\p{Punct}";
-	public final static String WORD_MARK = ".+\\p{Punct}";
-	public final static String WORD_MARK_SPLIT = "(?=[,.!?)])";
+	public static final String WORD_CODE = "\\w+\\.\\w+\\(.*\\)";
+	public static final String PUNCTUATION_MARK = "(\\p{Punct})";
+	public static final String MARK_WORD_MARK = "(\\p{Punct}.+\\p{Punct})";
+	public static final String MARK_WORD = "(\\p{Punct}.+)";
+	public static final String CODE_MARK = "\\w+\\.\\w+\\(.*\\)\\p{Punct}";
+	public static final String WORD_MARK = ".+\\p{Punct}";
+	public static final String WORD_MARK_SPLIT = "(?=[,.!?)])";
 
 	@Override
 	public ComponentText parseText(String lexeme) throws TextException {

@@ -10,9 +10,9 @@ import org.apache.logging.log4j.Logger;
 
 
 public class ParagraphParserImpl implements TextParser {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	private TextParser parser = new SentenceParserImpl();
-	public final static String SENTENCE_SPLIT = "(?<=([.!?.{3}]\s))";
+	public static final String SENTENCE_SPLIT = "(?<=([.!?.{3}]\s))";
 
 	@Override
 	public ComponentText parseText(String paragraph) throws TextException {

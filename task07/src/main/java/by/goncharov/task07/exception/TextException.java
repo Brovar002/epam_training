@@ -1,7 +1,6 @@
 package by.goncharov.task07.exception;
 
 public class TextException extends Exception {
-	private static final long serialVersionUID = 1L;
 
 	public TextException() {
 	}

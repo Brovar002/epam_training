@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CompositeText implements ComponentText {
-	public final static String SPACE = "\s";
+	public static final String SPACE = "\s";
 	private TypeComponent type;
 
 	private List<ComponentText> components = new ArrayList<>();

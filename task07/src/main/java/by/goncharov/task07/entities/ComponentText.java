@@ -8,4 +8,6 @@ public interface ComponentText {
 	List<ComponentText> getComponents();
 	
 	int countSymbol();
+
+
 }

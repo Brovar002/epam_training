@@ -10,9 +10,9 @@ import org.apache.logging.log4j.Logger;
 
 
 public class SentenceParserImpl implements TextParser {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	private TextParser parser = new LexemeParserImpl();
-	public final static String LEXEME_SPLIT = "\s";
+	public static final String LEXEME_SPLIT = "\s";
 
 	@Override
 	public ComponentText parseText(String sentence) throws TextException {

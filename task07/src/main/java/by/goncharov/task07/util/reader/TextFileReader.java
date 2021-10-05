@@ -1,4 +1,4 @@
-package by.goncharov.task07.reader;
+package by.goncharov.task07.util.reader;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 
 public class TextFileReader {
-	public static Logger log = LogManager.getLogger();
+	public static final Logger log = LogManager.getLogger();
 	
 	public String readFromFile (String filename) throws TextException {
 		Path path = Paths.get(filename);
