@@ -14,15 +14,15 @@ public class Flower {
     private Multiplying multiplying;
 
     Flower() {
-        this.visual =  new Visual ();
-        this.growingTip = new GrowingTip ();
+        this.visual =  new Visual();
+        this.growingTip = new GrowingTip();
     }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(final String id) {
         this.id = id;
     }
 
@@ -30,7 +30,7 @@ public class Flower {
         return soil;
     }
 
-    public void setSoil(Soil soil) {
+    public void setSoil(final Soil soil) {
         this.soil = soil;
     }
 
@@ -38,7 +38,7 @@ public class Flower {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -46,7 +46,7 @@ public class Flower {
         return origin;
     }
 
-    public void setOrigin(String origin) {
+    public void setOrigin(final String origin) {
         this.origin = origin;
     }
 
@@ -54,7 +54,7 @@ public class Flower {
         return dateLanding;
     }
 
-    public void setDateLanding(LocalDate dateLanding) {
+    public void setDateLanding(final LocalDate dateLanding) {
         this.dateLanding = dateLanding;
     }
 
@@ -62,7 +62,7 @@ public class Flower {
         return visual;
     }
 
-    public void setVisual(Visual visual) {
+    public void setVisual(final Visual visual) {
         this.visual = visual;
     }
 
@@ -70,7 +70,7 @@ public class Flower {
         return growingTip;
     }
 
-    public void setGrowingTip(GrowingTip growingTip) {
+    public void setGrowingTip(final GrowingTip growingTip) {
         this.growingTip = growingTip;
     }
 
@@ -78,52 +78,70 @@ public class Flower {
         return multiplying;
     }
 
-    public void setMultiplying(Multiplying multiplying) {
+    public void setMultiplying(final Multiplying multiplying) {
         this.multiplying = multiplying;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass () != o.getClass ()) return false;
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Flower flower = (Flower) o;
 
-        if (!id.equals (flower.id)) return false;
-        if (soil != flower.soil) return false;
-        if (!name.equals (flower.name)) return false;
-        if (!origin.equals (flower.origin)) return false;
-        if (!visual.equals (flower.visual)) return false;
-        if (!dateLanding.equals (flower.dateLanding)) return false;
-        if (!growingTip.equals (flower.growingTip)) return false;
+        if (!id.equals(flower.id)) {
+            return false;
+        }
+        if (soil != flower.soil) {
+            return false;
+        }
+        if (!name.equals(flower.name)) {
+            return false;
+        }
+        if (!origin.equals(flower.origin)) {
+            return false;
+        }
+        if (!visual.equals(flower.visual)) {
+            return false;
+        }
+        if (!dateLanding.equals(flower.dateLanding)) {
+            return false;
+        }
+        if (!growingTip.equals(flower.growingTip)) {
+            return false;
+        }
         return multiplying == flower.multiplying;
     }
 
 
     @Override
     public int hashCode() {
-        int result = id.hashCode ();
-        result = 31 * result + soil.hashCode ();
-        result = 31 * result + name.hashCode ();
-        result = 31 * result + origin.hashCode ();
-        result = 31 * result + visual.hashCode ();
-        result = 31 * result + dateLanding.hashCode ();
-        result = 31 * result + growingTip.hashCode ();
-        result = 31 * result + multiplying.hashCode ();
+        int result = id.hashCode();
+        result = 31 * result + soil.hashCode();
+        result = 31 * result + name.hashCode();
+        result = 31 * result + origin.hashCode();
+        result = 31 * result + visual.hashCode();
+        result = 31 * result + dateLanding.hashCode();
+        result = 31 * result + growingTip.hashCode();
+        result = 31 * result + multiplying.hashCode();
         return result;
     }
 
     @Override
     public String toString() {
-        return "Flower{" +
-                "id='" + id + '\'' +
-                ", soil=" + soil +
-                ", name='" + name + '\'' +
-                ", origin='" + origin + '\'' +
-                ", visual=" + visual +
-                ", dateLanding=" + dateLanding +
-                ", growingTip=" + growingTip +
-                ", multiplying=" + multiplying +
-                '}';
+        return "Flower{"
+                + "id='" + id + '\''
+                + ", soil=" + soil
+                + ", name='" + name + '\''
+                + ", origin='" + origin + '\''
+                + ", visual=" + visual
+                + ", dateLanding=" + dateLanding
+                + ", growingTip=" + growingTip
+                + ", multiplying=" + multiplying
+                + '}';
     }
 }

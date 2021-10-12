@@ -10,7 +10,7 @@ public class GrowingTip {
         return temperature;
     }
 
-    public void setTemperature(int temperature) {
+    public void setTemperature(final int temperature) {
         this.temperature = temperature;
     }
 
@@ -18,7 +18,7 @@ public class GrowingTip {
         return lighting;
     }
 
-    public void setLighting(boolean lighting) {
+    public void setLighting(final boolean lighting) {
         this.lighting = lighting;
     }
 
@@ -26,19 +26,27 @@ public class GrowingTip {
         return watering;
     }
 
-    public void setWatering(int watering) {
+    public void setWatering(final int watering) {
         this.watering = watering;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass () != o.getClass ()) return false;
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         GrowingTip that = (GrowingTip) o;
 
-        if (temperature != that.temperature) return false;
-        if (lighting != that.lighting) return false;
+        if (temperature != that.temperature) {
+            return false;
+        }
+        if (lighting != that.lighting) {
+            return false;
+        }
         return watering == that.watering;
     }
 
@@ -52,10 +60,10 @@ public class GrowingTip {
 
     @Override
     public String toString() {
-        return "GrowingTip{" +
-                "temperature=" + temperature +
-                ", lighting=" + lighting +
-                ", watering=" + watering +
-                '}';
+        return "GrowingTip{"
+                + "temperature=" + temperature
+                + ", lighting=" + lighting
+                + ", watering=" + watering
+                + '}';
     }
 }

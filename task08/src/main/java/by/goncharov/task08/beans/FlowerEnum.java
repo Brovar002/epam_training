@@ -22,7 +22,7 @@ public enum FlowerEnum {
 
     private String field;
 
-    FlowerEnum(String field) {
+    FlowerEnum(final String field) {
         this.field = field;
     }
 

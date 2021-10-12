@@ -9,7 +9,7 @@ public enum Soil {
 
     private final String value;
 
-    Soil(String value) {
+    Soil(final String value) {
         this.value = value;
     }
 
@@ -17,7 +17,7 @@ public enum Soil {
         return value;
     }
 
-    public static Soil fromValue(String value) {
+    public static Soil fromValue(final String value) {
         for (Soil currentEnum: Soil.values()) {
             if (currentEnum.value.equals(value)) {
                 return currentEnum;

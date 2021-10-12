@@ -8,7 +8,7 @@ public enum Multiplying {
 
     private final String value;
 
-    Multiplying(String v) {
+    Multiplying(final String v) {
         value = v;
     }
 
@@ -16,7 +16,7 @@ public enum Multiplying {
         return value;
     }
 
-    public static Multiplying fromValue(String value) {
+    public static Multiplying fromValue(final String value) {
         for (Multiplying currentEnum: Multiplying.values()) {
             if (currentEnum.value.equals(value)) {
                 return currentEnum;
