@@ -1,6 +1,6 @@
 package by.goncharov.task08.service;
 
-import by.goncharov.task08.parser.*;
+import by.goncharov.task08.service.parser.*;
 
 public final class ParserService {
 
